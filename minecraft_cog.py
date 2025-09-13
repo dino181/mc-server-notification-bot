@@ -63,7 +63,7 @@ class MinecraftServerCog(commands.Cog):
 
         await ctx.respond(f"Updated the notification channel to {channel.name}")
 
-    @tasks.loop(seconds=10)
+    @tasks.loop(minutes=1)
     async def check_server_status(self):
         if self._config["mc_notif_channel"] is None:
             return
