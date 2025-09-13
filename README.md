@@ -3,8 +3,8 @@
 A discord bot that notifies the status of a minecraft server.
 
 ## Pre-requisites
-- Docker.
-- A discord bot token. 
+- Docker
+- A discord bot token
 
 ## Run 
 ### Env file
