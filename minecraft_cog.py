@@ -75,5 +75,5 @@ class MinecraftServerCog(commands.Cog):
         status = get_status(server_adress=self._config["mc_server_address"])
         if status != self._current_server_status:
             embed = server_status_change(status)
-            await channel.send("@everyone", embed=embed)
+            await channel.send("@here", embed=embed)
             self._current_server_status = status
