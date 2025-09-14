@@ -14,7 +14,7 @@ def load_config(file_path: str = "./data/config.json") -> dict[str, Any]:
     return config
 
 
-def save_config(config: dict[str, Any], file_path: str = "config.json") -> bool:
+def save_config(config: dict[str, Any], file_path: str = "./data/config.json") -> bool:
     if not os.path.exists(file_path):
         return False
 
@@ -25,3 +25,4 @@ def save_config(config: dict[str, Any], file_path: str = "config.json") -> bool:
 
     except Exception:
         return False
+
